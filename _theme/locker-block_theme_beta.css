@@ -1,0 +1,9 @@
+.locker-block_theme_alpha .locker-block__locker {
+    width: 100%;
+    height: 100%;
+}
+
+.locker-block_theme_beta .locker-block__locker {
+    width: 100%;
+    height: 50%;
+}

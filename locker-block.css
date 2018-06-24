@@ -1,0 +1,20 @@
+/*
+ * test container styles
+ * to be replaced in future
+ */
+
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+ }
+
+ /* 
+  * locker-block styles
+  */
+
+.locker-block {
+    width: 50px;
+    height: 150px;
+    border: 1px solid #000000;
+}
