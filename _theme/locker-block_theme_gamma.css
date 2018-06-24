@@ -1,0 +1,9 @@
+.locker-block_theme_gamma {
+    display: flex;
+    flex-direction: row;
+}
+
+.locker-block_theme_gamma .locker-block__locker {
+    width: 50%;
+    height: 100%;
+}
