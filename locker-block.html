@@ -13,30 +13,32 @@
 </head>
 
 <body>
+
+<svg>
+  <defs>
+      <g id="alpha" class="locker-block__locker locker"><path d="M0,0 H50 V150 H0 Z" /></g>
+      <g id="beta_top" class="locker-block__locker locker"><path d="M0,0 H50 V75 H0 Z" /></g>
+      <g id="beta_bottom" class="locker-block__locker locker"><path d="M0,75 H50 V150 H0 Z" /></g>
+  </defs>
+</svg>
 <div class="container">
 
 <div class='locker-block'>
-  <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-    <g class="locker-block__locker locker">
-      <path d="M0,0 H50 V150 H0 Z" />
+  <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">  
+      <use href="alpha">  
       <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
       <text class="locker__clientID">Client</text>
-    </g>
   </svg>
 </div>
 
 <div class='locker-block'>
-  <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-    <g class="locker-block__locker locker">
-      <path d="M0,0 H50 V75 H0 Z" />
+  <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">  
+      <use href="beta_top">     
+      <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
+      <text class="locker__clientID">Client</text>     
+      <use href="beta_bottom">  
       <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
       <text class="locker__clientID">Client</text>
-    </g> 
-    <g class="locker-block__locker locker">
-      <path d="M0,75 H50 V150 H0 Z" />
-      <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
-      <text class="locker__clientID">Client</text>
-    </g>
   </svg>
 </div>
 
