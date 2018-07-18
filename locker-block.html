@@ -14,158 +14,148 @@
 
 <body>
 
-<svg>
+<svg class="locker-library">
   <defs>
-      <path id="alpha" class="locker-block__locker locker" d="M0,0 H50 V150 H0 Z" />
+      <path id="alpha" d="M0,0 H50 V150 H0 Z" />
 
-      <path id="beta_top" class="locker-block__locker locker" d="M0,0 H50 V75 H0 Z" />
-      <path id="beta_bottom" class="locker-block__locker locker" d="M0,75 H50 V150 H0 Z" />
+      <path id="beta_top" d="M0,0 H50 V75 H0 Z" />
+      <path id="beta_bottom" d="M0,75 H50 V150 H0 Z" />
 
-      <path id="gamma_right" class="locker-block__locker locker" d="M0,0 H25 V150 H0 Z" />
-      <path id="gamma_left" class="locker-block__locker locker" d="M25,0 H50 V150 H25 Z" />
+      <path id="gamma_right" d="M0,0 H25 V150 H0 Z" />
+      <path id="gamma_left" d="M25,0 H50 V150 H25 Z" />
 
-      <path id="delta_top" class="locker-block__locker locker" d="M0,0 H50 V100 L0,50 Z" />
-      <path id="delta_bottom" class="locker-block__locker locker" d="M0,50 V150 H50 V100 Z" />
+      <path id="delta_top" d="M0,0 H50 V100 L0,50 Z" />
+      <path id="delta_bottom" d="M0,50 V150 H50 V100 Z" />
 
-      <path id="epsilon_left" class="locker-block__locker locker" d="M0,0 H16 V75 H25 V150 H0 Z" />
-      <path id="epsilon_middle" class="locker-block__locker locker" d="M16,0 V75 H33 V0 Z" />
-      <path id="epsilon_right" class="locker-block__locker locker" d="M33,0 V75 H25 V150 H50 V0 Z" />
+      <path id="epsilon_left" d="M0,0 H16 V75 H25 V150 H0 Z" />
+      <path id="epsilon_middle" d="M16,0 V75 H33 V0 Z" />
+      <path id="epsilon_right" d="M33,0 V75 H25 V150 H50 V0 Z" />
 
-      <path id="zeta_1" class="locker-block__locker locker" d="M0,0 H25 V37 H0 Z" />
-      <path id="zeta_2" class="locker-block__locker locker" d="M0,37 H25 V75 H0 Z" />
-      <path id="zeta_3" class="locker-block__locker locker" d="M0,75 H25 V112 H0 Z" />
-      <path id="zeta_4" class="locker-block__locker locker" d="M0,112 H25 V150 H0 Z" />
-      <path id="zeta_5" class="locker-block__locker locker" d="M25,0 H50 V75 H25 Z" />
-      <path id="zeta_6" class="locker-block__locker locker" d="M25,75 H50 V150 H25 Z" />
+      <path id="zeta_1" d="M0,0 H25 V37 H0 Z" />
+      <path id="zeta_2" d="M0,37 H25 V75 H0 Z" />
+      <path id="zeta_3" d="M0,75 H25 V112 H0 Z" />
+      <path id="zeta_4" d="M0,112 H25 V150 H0 Z" />
+      <path id="zeta_5" d="M25,0 H50 V75 H25 Z" />
+      <path id="zeta_6" d="M25,75 H50 V150 H25 Z" />
 
-      <path id="eta_top" class="locker-block__locker locker" d="M0,0 v100  Q25,100 25,75 Q25,50 50,50 V0 H0" />
-      <path id="eta_bottom" class="locker-block__locker locker" d="M0,150 V100  Q25,100 25,75 Q25,50 50,50 V150 Z" />
-
+      <path id="eta_top" d="M0,0 v100  Q25,100 25,75 Q25,50 50,50 V0 H0" />
+      <path id="eta_bottom" d="M0,150 V100  Q25,100 25,75 Q25,50 50,50 V150 Z" />
   </defs>
 </svg>
 
 <div class="container">
 
-  <div class='locker-block'>
-    <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">  
+  <svg class='locker-block' viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
+      <g class="locker-block__locker locker">  
         <use href="#alpha"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
-        <text class="locker__clientID">Client</text>
-    </svg>
-  </div>
-
-  <div class='locker-block'>
-    <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">  
-        <use href="#beta_top"/>     
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
-        <text class="locker__clientID">Client</text>     
-
-        <use href="#beta_bottom"/>  
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
-        <text class="locker__clientID">Client</text>
-    </svg>
-  </div>
-
-  <div class='locker-block'>
-    <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-      <g class="locker-block__locker locker">
-        <use href="#gamma_right"/> 
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
+        <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
         <text class="locker__clientID">Client</text>
       </g>
-      <g class="locker-block__locker locker">
-        <use href="#gamma_left"/> 
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
-        <text class="locker__clientID">Client</text>
-      </g>
-    </svg>
-  </div>
+  </svg>
 
-  <div class='locker-block'>
-    <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-      <g class="locker-block__locker locker">
-        <use href="#delta_top"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
-        <text class="locker__clientID">Client</text>
-      </g>                
-      <g class="locker-block__locker locker">
-        <use href="#delta_bottom"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
-        <text class="locker__clientID">Client</text>
-      </g>
-    </svg>
-  </div>
+  <svg class='locker-block' viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">  
+    <g class="locker-block__locker locker">
+      <use href="#beta_top"/>     
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
+      <text class="locker__clientID">Client</text>     
+    </g>
 
-  <div class='locker-block'>
-    <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-      <g class="locker-block__locker locker">
-        <use href="#epsilon_left"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
-        <text class="locker__clientID">Client</text>
-      </g>                
-      <g class="locker-block__locker locker">
-        <use href="#epsilon_middle"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
-        <text class="locker__clientID">Client</text>
-      </g>
-      <g class="locker-block__locker locker">
-        <use href="#epsilon_right"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
-        <text class="locker__clientID">Client</text>
-      </g>
-    </svg>
-  </div>
+    <g class="locker-block__locker locker">
+      <use href="#beta_bottom"/>  
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
+      <text class="locker__clientID">Client</text>
+    </g>
+  </svg>
 
+  <svg class='locker-block' viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
+    <g class="locker-block__locker locker">
+      <use href="#gamma_right"/> 
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
+      <text class="locker__clientID">Client</text>
+    </g>
+    <g class="locker-block__locker locker">
+      <use href="#gamma_left"/> 
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
+      <text class="locker__clientID">Client</text>
+    </g>
+  </svg>
 
-<div class='locker-block'>
-  <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
+  <svg class='locker-block' viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
+    <g class="locker-block__locker locker">
+      <use href="#delta_top"/>
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
+      <text class="locker__clientID">Client</text>
+    </g>                
+    <g class="locker-block__locker locker">
+      <use href="#delta_bottom"/>
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
+      <text class="locker__clientID">Client</text>
+    </g>
+  </svg>
+
+  <svg class='locker-block' viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
+    <g class="locker-block__locker locker">
+      <use href="#epsilon_left"/>
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
+      <text class="locker__clientID">Client</text>
+    </g>                
+    <g class="locker-block__locker locker">
+      <use href="#epsilon_middle"/>
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
+      <text class="locker__clientID">Client</text>
+    </g>
+    <g class="locker-block__locker locker">
+      <use href="#epsilon_right"/>
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
+      <text class="locker__clientID">Client</text>
+    </g>
+  </svg>
+
+  <svg class='locker-block' viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
       <g class="locker-block__locker locker">
         <use href="#zeta_1"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
+        <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
         <text class="locker__clientID">Client</text>
       </g>                
       <g class="locker-block__locker locker">
         <use href="#zeta_2"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
+        <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
         <text class="locker__clientID">Client</text>
       </g>
       <g class="locker-block__locker locker">
         <use href="#zeta_3"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
+        <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
         <text class="locker__clientID">Client</text>
       </g>             
       <g class="locker-block__locker locker">
         <use href="#zeta_4"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
+        <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
         <text class="locker__clientID">Client</text>
       </g>
-       <g class="locker-block__locker locker">
+        <g class="locker-block__locker locker">
         <use href="#zeta_5"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
+        <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
         <text class="locker__clientID">Client</text>
       </g>
       <g class="locker-block__locker locker">
         <use href="#zeta_6"/>
-        <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
+        <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
         <text class="locker__clientID">Client</text>
       </g>
   </svg>
-</div>
 
-<div class="locker-block">
-  <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
+  <svg class='locker-block' viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
     <g class="locker-block__locker locker">
       <use href="#eta_top"/>
-      <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
       <text class="locker__clientID">Client</text>
     </g>
     <g class="locker-block__locker locker">
       <use href="#eta_bottom"/>
-      <text text-anchor="middle" x="0" y="0" class="locker__number">Num</text>
+      <text text-anchor="middle" x="20" y="20" class="locker__number">Num</text>
       <text class="locker__clientID">Client</text>
     </g>
   </svg>
-</div>
 
 </div>
 
