@@ -3,7 +3,7 @@
     border: 1px solid blue;
 }
 
-.locker-block__locker path {
+.locker-block__locker  {
     fill: rgb(234,234,234);
     stroke-width: 1;
     stroke: rgb(0,0,0);
