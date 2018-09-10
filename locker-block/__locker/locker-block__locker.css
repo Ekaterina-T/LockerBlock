@@ -1,10 +1,86 @@
-.locker-block__locker {
-    box-sizing: border-box;
-    border: 1px solid blue;
-}
-
 path {
     fill: rgb(234,234,234);
     stroke-width: 1;
     stroke: rgb(0,0,0);
+}
+
+path#alpha {
+    fill: rgb(216, 216, 216);
+}
+
+path#beta-top {
+    fill: rgb(2, 199, 68);
+}
+
+path#beta-bottom {
+    fill: rgb(0, 178, 223);
+}
+
+path#gamma-right{
+    fill: #62cac2;
+}
+
+path#gamma-left{
+    fill: #ffffff;
+}
+
+path#delta-top {
+    fill: rgb(199, 41, 2);
+}
+
+path#delta-bottom {
+    fill: rgb(255, 255, 255);
+    stroke: #000000;
+}
+
+path#zeta-1{
+    fill: #ff5e00;
+}
+
+path#zeta-2{
+    fill: #ff5e00;
+}
+
+path#zeta-3{
+    fill: #ff5e00;
+}
+
+path#zeta-4{
+    fill: #ff5e00;
+}
+
+path#zeta-5{
+    fill: #ff5e00;
+}
+
+path#zeta-6{
+    fill: #ff5e00;
+}
+
+path#epsilon-right{
+    fill: #ffee00;
+}
+
+path#epsilon-middle{
+    fill: #2ad100;
+}
+
+path#epsilon-left{
+    fill: #ffee00;
+}
+
+path#eta-top {
+    fill: rgb(208, 255, 0);
+}
+
+path#eta-bottom {
+    fill: rgb(182, 182, 182);
+}
+
+path#teta-right{
+    fill: #ffa600;
+}
+
+path#teta-left{
+    fill: #a8a8a8;
 }

@@ -9,6 +9,7 @@
 
 <link href="locker-block/locker-block.css" rel="stylesheet">
 <link href="locker-block/__locker/locker-block__locker.css" rel="stylesheet">
+<link href="locker-block/__locker/_fill-color/locker_fill-color.css" rel="stylesheet">
 
 </head>
 
@@ -18,28 +19,32 @@
   <defs>
       <path id="alpha" d="M0,0 H50 V150 H0 Z" />
 
-      <path id="beta_top" d="M0,0 H50 V75 H0 Z" />
-      <path id="beta_bottom" d="M0,75 H50 V150 H0 Z" />
+      <path id="beta-top" d="M0,0 H50 V75 H0 Z" />
+      <path id="beta-bottom" d="M0,75 H50 V150 H0 Z" />
 
-      <path id="gamma_right" d="M0,0 H25 V150 H0 Z" />
-      <path id="gamma_left" d="M25,0 H50 V150 H25 Z" />
+      <path id="gamma-right" d="M0,0 H25 V150 H0 Z" />
+      <path id="gamma-left" d="M25,0 H50 V150 H25 Z" />
 
-      <path id="delta_top" d="M0,0 H50 V100 L0,50 Z" />
-      <path id="delta_bottom" d="M0,50 V150 H50 V100 Z" />
+      <path id="delta-top" d="M0,0 H50 V100 L0,50 Z" />
+      <path id="delta-bottom" d="M0,50 V150 H50 V100 Z" />
 
-      <path id="epsilon_left" d="M0,0 H16 V75 H25 V150 H0 Z" />
-      <path id="epsilon_middle" d="M16,0 V75 H33 V0 Z" />
-      <path id="epsilon_right" d="M33,0 V75 H25 V150 H50 V0 Z" />
+      <path id="epsilon-left" d="M0,0 H16 V100 H25 V150 H0 Z" />
+      <path id="epsilon-middle" d="M16,0 V100 H33 V0 Z" />
+      <path id="epsilon-right" d="M33,0 V100 H25 V150 H50 V0 Z" />
 
-      <path id="zeta_1" d="M0,0 H25 V37 H0 Z" />
-      <path id="zeta_2" d="M0,37 H25 V75 H0 Z" />
-      <path id="zeta_3" d="M0,75 H25 V112 H0 Z" />
-      <path id="zeta_4" d="M0,112 H25 V150 H0 Z" />
-      <path id="zeta_5" d="M25,0 H50 V75 H25 Z" />
-      <path id="zeta_6" d="M25,75 H50 V150 H25 Z" />
+      <path id="zeta-1" d="M0,0 H25 V37 H0 Z" />
+      <path id="zeta-2" d="M0,37 H25 V75 H0 Z" />
+      <path id="zeta-3" d="M0,75 H25 V112 H0 Z" />
+      <path id="zeta-4" d="M0,112 H25 V150 H0 Z" />
+      <path id="zeta-5" d="M25,0 H50 V75 H25 Z" />
+      <path id="zeta-6" d="M25,75 H50 V150 H25 Z" />
 
-      <path id="eta_top" d="M0,0 v100  Q25,100 25,75 Q25,50 50,50 V0 H0" />
-      <path id="eta_bottom" d="M0,150 V100  Q25,100 25,75 Q25,50 50,50 V150 Z" />
+      <path id="eta-top" d="M0,0 v100  Q25,100 25,75 Q25,50 50,50 V0 H0 Z" />
+      <path id="eta-bottom" d="M0,150 V100  Q25,100 25,75 Q25,50 50,50 V150 Z" />
+
+      <path id="teta-right" d="M0,0 V100  H25 V50 H50 V0 Z" />
+      <path id="teta-left" d="M0,100 V150  H50 V50 H25 V100 Z" />
+      
   </defs>
 </svg>
 
@@ -56,8 +61,8 @@
 
   <div class='locker-block locker-block_theme_beta'>
     <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">  
-      <use class="locker-block__locker" href="#beta_top"/>         
-      <use class="locker-block__locker" href="#beta_bottom"/>  
+      <use class="locker-block__locker" href="#beta-top"/>         
+      <use class="locker-block__locker" href="#beta-bottom"/>  
     </svg>
     <div class="locker-block__number">
       <div>000</div>
@@ -67,10 +72,10 @@
     </div>
   </div>
 
-  <div class='locker-block locker-block_theme_beta'>
+  <div class='locker-block locker-block_theme_teta'>
     <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-      <use class="locker-block__locker" href="#beta_top"/>
-      <use class="locker-block__locker" href="#beta_bottom"/>
+      <use class="locker-block__locker" href="#teta-right"/>
+      <use class="locker-block__locker" href="#teta-left"/>
     </svg>
     <div class="locker-block__number">
       <div>000</div>
@@ -82,8 +87,8 @@
 
   <div class='locker-block locker-block_theme_gamma'>
     <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-      <use class="locker-block__locker" href="#gamma_right"/>
-      <use class="locker-block__locker" href="#gamma_left"/>
+      <use class="locker-block__locker" href="#gamma-right"/>
+      <use class="locker-block__locker" href="#gamma-left"/>
     </svg>
     <div class="locker-block__number">
       <div>000</div>
@@ -95,8 +100,8 @@
 
   <div class='locker-block locker-block_theme_delta'>
     <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-      <use class="locker-block__locker" href="#delta_top"/>
-      <use class="locker-block__locker" href="#delta_bottom"/>
+      <use class="locker-block__locker" href="#delta-top"/>
+      <use class="locker-block__locker" href="#delta-bottom"/>
     </svg>
     <div class="locker-block__number">
       <div>000</div>
@@ -108,9 +113,9 @@
 
   <div class='locker-block locker-block_theme_epsilon'>
     <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-      <use class="locker-block__locker" href="#epsilon_left"/>
-      <use class="locker-block__locker" href="#epsilon_middle"/>
-      <use class="locker-block__locker" href="#epsilon_right"/>
+      <use class="locker-block__locker" href="#epsilon-left"/>
+      <use class="locker-block__locker" href="#epsilon-middle"/>
+      <use class="locker-block__locker" href="#epsilon-right"/>
     </svg>
     <div class="locker-block__number">
       <div>000</div>
@@ -125,12 +130,12 @@
 
   <div class='locker-block locker-block_theme_zeta'>
     <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-      <use class="locker-block__locker" href="#zeta_1"/>
-      <use class="locker-block__locker" href="#zeta_2"/>
-      <use class="locker-block__locker" href="#zeta_3"/>
-      <use class="locker-block__locker" href="#zeta_4"/>
-      <use class="locker-block__locker" href="#zeta_5"/>
-      <use class="locker-block__locker" href="#zeta_6"/>
+      <use class="locker-block__locker" href="#zeta-1"/>
+      <use class="locker-block__locker" href="#zeta-2"/>
+      <use class="locker-block__locker" href="#zeta-3"/>
+      <use class="locker-block__locker" href="#zeta-4"/>
+      <use class="locker-block__locker" href="#zeta-5"/>
+      <use class="locker-block__locker" href="#zeta-6"/>
     </svg>
     <div class="locker-block__number">
       <div>000</div>
@@ -154,8 +159,8 @@
 
   <div class='locker-block locker-block_theme_eta'>
     <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-      <use class="locker-block__locker" href="#eta_top"/>
-      <use class="locker-block__locker" href="#eta_bottom"/>
+      <use class="locker-block__locker" href="#eta-top"/>
+      <use class="locker-block__locker" href="#eta-bottom"/>
     </svg>
     <div class="locker-block__number">
       <div>000</div>
