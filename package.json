@@ -1,0 +1,23 @@
+{
+  "name": "lockerblock",
+  "version": "1.0.0",
+  "description": "Locker Block module",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ekaterina-T/LockerBlock.git"
+  },
+  "author": "Ekaterina Tarakanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ekaterina-T/LockerBlock/issues"
+  },
+  "homepage": "https://github.com/Ekaterina-T/LockerBlock#readme",
+  "dependencies": {}
+}
