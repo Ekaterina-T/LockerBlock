@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Locker blocks library.</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
+
+<link href="locker-block.css" rel="stylesheet">
+<link href="__locker/locker-block__locker.css" rel="stylesheet">
+
+<link href="_theme/locker-block_theme_alpha.css" rel="stylesheet">
+<link href="_theme/locker-block_theme_beta.css" rel="stylesheet">
+<link href="_theme/locker-block_theme_gamma.css" rel="stylesheet">
+<link href="_theme/locker-block_theme_delta.css" rel="stylesheet">
+<link href="_theme/locker-block_theme_zeta.css" rel="stylesheet">
+<link href="_theme/locker-block_theme_epsilon.css" rel="stylesheet">
+<link href="_theme/locker-block_theme_eta.css" rel="stylesheet">
+<link href="_theme/locker-block_theme_teta.css" rel="stylesheet">
+
+<script src="locker-block.js"></script>
+<script src="__locker/locker-block__locker.js"></script>
+
+</head>
+
+<body>
+
+<svg id="locker-library">
+  <defs>
+      <path id="alpha" d="M0,0 H50 V150 H0 Z" locker-block-id="alpha"/>
+
+      <path id="beta-top" d="M0,0 H50 V75 H0 Z" locker-block-id="beta"/>
+      <path id="beta-bottom" d="M0,75 H50 V150 H0 Z" locker-block-id="beta"/>
+
+      <path id="gamma-right" d="M0,0 H25 V150 H0 Z" locker-block-id="gamma"/>
+      <path id="gamma-left" d="M25,0 H50 V150 H25 Z" locker-block-id="gamma"/>
+
+      <path id="delta-top" d="M0,0 H50 V100 L0,50 Z" locker-block-id="delta"/>
+      <path id="delta-bottom" d="M0,50 V150 H50 V100 Z" locker-block-id="delta"/>
+
+      <path id="epsilon-left" d="M0,0 H16 V100 H25 V150 H0 Z" locker-block-id="epsilon"/>
+      <path id="epsilon-middle" d="M16,0 V100 H33 V0 Z" locker-block-id="epsilon"/>
+      <path id="epsilon-right" d="M33,0 V100 H25 V150 H50 V0 Z" locker-block-id="epsilon"/>
+
+      <path id="zeta-1" d="M0,0 H25 V37 H0 Z" locker-block-id="zeta"/>
+      <path id="zeta-2" d="M0,37 H25 V75 H0 Z" locker-block-id="zeta"/>
+      <path id="zeta-3" d="M0,75 H25 V112 H0 Z" locker-block-id="zeta"/>
+      <path id="zeta-4" d="M0,112 H25 V150 H0 Z" locker-block-id="zeta"/>
+      <path id="zeta-5" d="M25,0 H50 V75 H25 Z" locker-block-id="zeta"/>
+      <path id="zeta-6" d="M25,75 H50 V150 H25 Z" locker-block-id="zeta"/>
+
+      <path id="eta-top" d="M0,0 v100  Q25,100 25,75 Q25,50 50,50 V0 H0 Z" locker-block-id="eta"/>
+      <path id="eta-bottom" d="M0,150 V100  Q25,100 25,75 Q25,50 50,50 V150 Z" locker-block-id="eta"/>
+
+      <path id="teta-right" d="M0,0 V100  H25 V50 H50 V0 Z" locker-block-id="teta"/>
+      <path id="teta-left" d="M0,100 V150  H50 V50 H25 V100 Z" locker-block-id="teta"/>
+      
+  </defs>
+</svg>
+
+<div class="container">
+  <div class="locker-block locker-block_theme_gamma">
+    <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
+      <use class="locker-block__locker" href="gamma-right"></use>
+      <use class="locker-block__locker" href="gamma-left"></use>
+    </svg>
+  </div>
+</div>
+
+<script>
+
+ // debugger;
+
+ // var params = {lockerBlockTypeId: 'gamma'};
+ // var lb = new LockerBlock(params);
+ // document.querySelector('.container').appendChild(lb.node);
+
+</script>
+
+</body>
+</html>
