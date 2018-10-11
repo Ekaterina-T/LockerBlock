@@ -18,7 +18,7 @@ function Locker (params) {
 
     var node = document.createElementNS('http://www.w3.org/2000/svg','use');
     node.classList.add('locker-block__locker');
-    node.setAttribute('href',lockerTypeId);
+    node.setAttribute('href','#'+lockerTypeId);
 
     this.node = node;
     this.number = lockerNumber;    

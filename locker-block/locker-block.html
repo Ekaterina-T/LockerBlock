@@ -60,21 +60,21 @@
 </svg>
 
 <div class="container">
-  <div class="locker-block locker-block_theme_gamma">
-    <svg viewBox="0 0 50 150" preserveAspectRatio="xMinYMin meet">
-      <use class="locker-block__locker" href="gamma-right"></use>
-      <use class="locker-block__locker" href="gamma-left"></use>
-    </svg>
-  </div>
 </div>
 
 <script>
 
  // debugger;
+  var N = 10;
+  var params = {lockerBlockTypeId: 'gamma'};
+  var lockerBlockSet = [];
 
- // var params = {lockerBlockTypeId: 'gamma'};
- // var lb = new LockerBlock(params);
- // document.querySelector('.container').appendChild(lb.node);
+  for(var i=0; i<N; i++) {
+    var lb = new LockerBlock(params);
+    lockerBlockSet.push(lb);
+    document.querySelector('.container').appendChild(lb.node);    
+  }
+  
 
 </script>
 
